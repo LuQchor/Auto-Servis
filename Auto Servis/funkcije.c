@@ -375,9 +375,9 @@ void velikipremium(void)
 void pretrazivanjeracuna(void)
 {
     char string[150] = "";
-    char newline[3] = "";
-    int result = 0;
-    int output = 0;
+    char novalinija[3] = "";
+    int rezultat = 0;
+    int izlaz = 0;
     FILE* filepretracun = NULL;
 
     filepretracun = fopen("racun.txt", "r");
@@ -388,31 +388,31 @@ void pretrazivanjeracuna(void)
     }
     do
     {
-        string[0] = 0;//set empty string
-        if (1 == (result = fscanf(filepretracun, "%2[\n]", newline)))
+        string[0] = 0;
+        if (1 == (rezultat = fscanf(filepretracun, "%2[\n]", novalinija)))
         {
-            if (output)
-            {//enabled
-                printf("%s", newline);
+            if (izlaz)
+            {
+                printf("%s", novalinija);
             }
-            if ('\n' == newline[1]) 
-            {//two newlines
-                output = 0;//disable
+            if ('\n' == novalinija[1]) 
+            {
+                izlaz = 0;
             }
         }
         else 
         {
-            result = fscanf(filepretracun, "%149s", string);
+            rezultat = fscanf(filepretracun, "%149s", string);
             if (strstr(string, odabranidan))
             {
-                output = 1;//enable
+                izlaz = 1;
             }
         }
-        if (output && string[0]) 
-        {//enabled and string not empty
+        if (izlaz && string[0]) 
+        {
             printf("%s ", string);
         }
-    } while (EOF != result);
+    } while (EOF != rezultat);
 
     fclose(filepretracun);
     char odabranidan[15] = {0};

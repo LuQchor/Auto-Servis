@@ -234,7 +234,8 @@ void ZapisUFile(AUTOMEHANICAR* GlavaProlaza)
     {
         fprintf(fileautomehanicar,"%s %s %d\t\n", GlavaProlaza->ime, GlavaProlaza->prezime, GlavaProlaza->id);
         GlavaProlaza = GlavaProlaza->SljedecaGlava;
-    }  
+    }
+    fclose(fileautomehanicar);
 }
 
 void BrojacZaposlenihAutomehanicara()

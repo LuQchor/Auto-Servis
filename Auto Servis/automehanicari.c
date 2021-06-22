@@ -40,15 +40,18 @@ int AutomehanicariGlavniIzbornik()
 			Glava = UnesiUGlavu(Glava);
 			n++;
 		}
-
+		printf("\n");
 		ProlazKrozListu(Glava);
+		char nptr[100];
+		char* errptr;
+		printf("\n");
 		do
 		{
-			uvjet = 0;
 			printf("Unesi ID radnika kojeg zelis odabrati ");
-			scanf("%d", &uvjet);
+			fgets(nptr, sizeof nptr, stdin);
+			uvjet = strtol(nptr, &errptr, 10);
 			OdabraniAutomehanicar = PretrazivanjeListe(Glava, uvjet);
-		} while (OdabraniAutomehanicar == NULL);
+		} while ((*errptr != '\n' && *errptr != '\0') || uvjet <= 0 || uvjet > 100 || OdabraniAutomehanicar == NULL);
 		system("cls");
 		GlavniIzbornik();
 		break;
@@ -99,18 +102,23 @@ int AutomehanicariGlavniIzbornik()
 			Glava = UnesiUGlavu(Glava);
 			n++;
 		}
-
+		printf("\n");
 		ProlazKrozListu(Glava);
-		uvjet = 0;
-		printf("Unesi ID radnika kojeg zelis obrisati ");
-		scanf("%d", &uvjet);
-		CiljanaLista = ZauzimanjeAutomehanicara();
-		CiljanaLista = PretrazivanjeListe(Glava, uvjet);
+		printf("\n");
+		memset(nptr, 0, 100);
+		errptr = NULL;
+		printf("\n");
+		do
+		{
+			printf("Unesi ID radnika kojeg zelis obrisati ");
+			fgets(nptr, sizeof nptr, stdin);
+			uvjet = strtol(nptr, &errptr, 10);
+			CiljanaLista = ZauzimanjeAutomehanicara();
+			CiljanaLista = PretrazivanjeListe(Glava, uvjet);
+		} while ((*errptr != '\n' && *errptr != '\0') || uvjet <= 0 || uvjet >= 100 || CiljanaLista == NULL);
 		ObrisiClana(&Glava, CiljanaLista);
-		ProlazKrozListu(Glava);
 		ZapisUFile(Glava);
 		system("cls");
-		free(CiljanaLista);
 		AutomehanicariGlavniIzbornik();
 		break;
 	case 9:

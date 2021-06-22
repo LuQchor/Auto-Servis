@@ -37,7 +37,6 @@ int VwModeli()
 	case 3:
 		strcpy(PokNaAutomobil->model, "Golf");
 		system("cls");
-		printf("%s", PokNaAutomobil->model);
 		Golf();
 		break;
 	case 4:
@@ -810,7 +809,7 @@ int Golf2020()
 	do
 	{
 		uvjet = _getch() - 48;
-	} while (uvjet < 0 || uvjet>10 || uvjet == 4 || uvjet == 6 || uvjet == 7 || uvjet == 8);
+	} while (uvjet < 0 || uvjet>10 || uvjet == 5 || uvjet == 6 || uvjet == 7 || uvjet == 8);
 	switch (uvjet)
 	{
 	case 1:

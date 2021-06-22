@@ -295,3 +295,33 @@ Bosch Filtar kabine 71.02 HRK
 Bosch Filtar zraka 84.42 HRK
 Ruke 200 HRK
 Ukupna cijena 768.37 HRK
+
+Srijeda 23-06-2021 00:09:10
+Servisirano vozilo je: Skoda Octavia 4 2020+ 1.5 TSI
+Automehanicar koji je servisirao: Asd Asd 6
+Odabrani servis je Mali servis  Regular 
+5W30 Castrol Edge Titanium LL FST 4L 290.64 HRK
+5W30 Castrol Edge Titanium LL FST 1L  69.36 HRK
+Bosch Filtar ulja 52.93 HRK
+Bosch Filtar kabine 71.02 HRK
+Bosch Filtar zraka 84.42 HRK
+Ruke 200 HRK
+Ukupna cijena 768.37 HRK
+
+Srijeda 23-06-2021 00:09:51
+Servisirano vozilo je: Seat Ibiza 5 2017+ 1.6 TDI
+Automehanicar koji je servisirao: Hrvoje Sutak 4
+Odabrani servis je Veliki servis  Premium 
+5W30 Castrol Edge Titanium LL FST 4L 290.64 HRK
+5W30 Castrol Edge Titanium LL FST 1L  69.36 HRK
+Filter za ulje K&N HP-1006 95 HRK
+CoopersFiaam Filtar kabine 150.08 HRK
+Sportski Filtar za zrak K&N RU-4960 388 HRK
+Bosch Vodena pumpa + sklop zupcastog remena  853.80 HRK
+Antifriz al extra crveni G12 + 3L 65.66 HRK
+Antifriz al extra crveni G12 + 1L 21.44 HRK
+Bosch Slobodni hod generatora  306.19 HRK
+Bosch Klinasti orebreni remen  95.14 HRK
+Ruke 350 HRK
+Ukupna cijena 2655.31 HRK
+

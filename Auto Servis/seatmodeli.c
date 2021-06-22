@@ -36,6 +36,7 @@ int SeatModeli()
 		Leon();
 		break;
 	case 9:
+		system("cls");
 		OdabirMarke();
 		break;
 	case 0:
@@ -604,6 +605,7 @@ int Leon()
 		Leon2020();
 		break;
 	case 9:
+		system("cls");
 		SeatModeli();
 		break;
 	case 0:

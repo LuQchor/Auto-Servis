@@ -632,7 +632,6 @@ int Octavia2020()
 		GlavniIzbornik();
 		break;
 	case 3:
-		break;
 		strcpy(PokNaAutomobil->motor, "1.5 TSI");
 		system("cls");
 		GlavniIzbornik();
